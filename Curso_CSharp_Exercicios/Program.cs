@@ -4,42 +4,42 @@
     {
         static void Main(string[] args)
         {
-            DadosPessoais Pessoa1, Pessoa2;
+            DadosPessoais pessoa1, pessoa2;
 
-            Pessoa1 = new DadosPessoais();
-            Pessoa2 = new DadosPessoais();
+            pessoa1 = new DadosPessoais();
+            pessoa2 = new DadosPessoais();
 
             Console.WriteLine("Insira os dados pessoais da primeira pessoa:");
 
             Console.Write("Nome:");
-            Pessoa1.Nome = Console.ReadLine();
+            pessoa1.Nome = Console.ReadLine();
 
             Console.Write("Idade:");
-            Pessoa1.Idade = int.Parse(Console.ReadLine());
+            pessoa1.Idade = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Insira os dados pessoais da segunda pessoa:");
 
             Console.Write("Nome:");
-            Pessoa2.Nome = Console.ReadLine();
+            pessoa2.Nome = Console.ReadLine();
 
             Console.Write("Idade:");
-            Pessoa2.Idade = int.Parse(Console.ReadLine());
+            pessoa2.Idade = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Dados da primeira pessoa:");
-            Console.WriteLine($"Nome: {Pessoa1.Nome}");
-            Console.WriteLine($"Idade: {Pessoa1.Idade}");
+            Console.WriteLine($"Nome: {pessoa1.Nome}");
+            Console.WriteLine($"Idade: {pessoa1.Idade}");
 
             Console.WriteLine("Dados da segunda pessoa:");
-            Console.WriteLine($"Nome: {Pessoa2.Nome}");
-            Console.WriteLine($"Idade: {Pessoa2.Idade}");
+            Console.WriteLine($"Nome: {pessoa2.Nome}");
+            Console.WriteLine($"Idade: {pessoa2.Idade}");
 
-            if(Pessoa1.Idade > Pessoa2.Idade)
+            if(pessoa1.Idade > pessoa2.Idade)
             {
-                Console.WriteLine($"Pessoa mais velha: {Pessoa1.Nome}");
+                Console.WriteLine($"Pessoa mais velha: {pessoa1.Nome}");
             }
             else
             {
-                Console.WriteLine($"Pessoa mais velha: {Pessoa2.Nome}");
+                Console.WriteLine($"Pessoa mais velha: {pessoa2.Nome}");
             }
 
         }
